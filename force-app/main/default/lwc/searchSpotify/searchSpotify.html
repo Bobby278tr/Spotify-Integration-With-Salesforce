@@ -9,4 +9,19 @@
             </div>
         </div>
     </div>
+
+    <template if:true={displayResult}>
+        <div class="track-container">
+            <div class="album-info">
+                <img src={trackUrl} alt="Album Cover" class="album-cover" />
+                <div class="track-details">
+                    <a href={trackData.external_urls.spotify} target="_blank" class="track-name">{trackData.name}</a>
+                    <p class="artists">Artists: {artistName}</p>
+                    <p class="popularity">Popularity: {trackData.popularity}</p>
+                    <a href={trackData.album.external_urls.spotify} target="_blank" class="album-link">Album: {trackData.album.name}</a>
+                    <p class="release-date">Release Date : {trackData.album.release_date}</p>
+                </div>
+            </div>
+        </div>
+    </template>
 </template>
