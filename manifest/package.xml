@@ -1,36 +1,34 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <!-- Auth Provider -->
     <types>
-        <members>*</members>
+        <members>Spotify</members>
+        <name>AuthProvider</name>
+    </types>
+
+    <!-- External Credential -->
+    <types>
+        <members>Spotify</members>
+        <name>ExternalCredential</name>
+    </types>
+
+    <!-- Namedcredentials -->
+    <types>
+        <members>Spotify</members>
+        <name>NamedCredential</name>
+    </types>
+
+    <!-- Permission Set -->
+    <types>
+        <members>Spotify_Permission_Set</members>
+        <name>PermissionSet</name>
+    </types>
+
+    <!-- Apex Classes -->
+    <types>
+        <members>SpotifyIntegration</members>
         <name>ApexClass</name>
     </types>
-    <types>
-        <members>*</members>
-        <name>ApexComponent</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>ApexPage</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>ApexTestSuite</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>ApexTrigger</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>AuraDefinitionBundle</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>LightningComponentBundle</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>StaticResource</name>
-    </types>
+
     <version>65.0</version>
 </Package>
