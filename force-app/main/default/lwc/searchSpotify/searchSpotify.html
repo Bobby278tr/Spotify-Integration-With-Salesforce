@@ -1,0 +1,12 @@
+<template>
+    <div class="slds-box slds-theme_default">
+        <div class="slds-grid slds-gutters">
+            <div class="slds-col slds-size_2-of-3">
+                <lightning-input variant="label-hidden" placeholder="Enter track to search" onchange={handleSearchChange} required="true" message-when-value-missing="Please enter a track to search"></lightning-input>
+            </div>
+            <div class="slds-col slds-size_1-of-3">
+                <lightning-button label="Search" onclick={searchTrack}></lightning-button>
+            </div>
+        </div>
+    </div>
+</template>
